@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <title>Te amo!</title>
+        
+    <style>
+       body{
+        background-image: url('cora.jpg');
+        background-color: rgba(246, 18, 18, 0.773);
+        text-align: center;
+    
+    }
+        .painel{
+        padding-top: 20px;
+        margin: auto;
+        width: 500px;
+        height: 570px;
+        background-color: transparent;
+        border-radius: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+    .neon {
+        font-family: "Dancing Script", cursive;
+        margin: 0;
+        font-size: 50px;
+        text-shadow: 0 0 5px red, 0 0 15px red, 0 0 30px red, 0 0 50px red;
+    }
+    
+    #sim{
+        
+        color: rgb(66, 255, 52);
+        width: 180px;
+        height: 40px;
+        border: 4px solid #711DB0;
+        border-radius: 10px;
+        background-color: transparent;
+        font-size: x-large;
+        margin-left: 100px;
+        
+        
+    }
+    #nao{
+        position: absolute;
+        width: 100px;
+        height: 40px;
+        border: 4px solid #711DB0;
+        border-radius: 10px;
+        background-color: transparent;
+        color: rgb(66, 255, 52);
+        font-size: x-large;
+        margin-left: 40px;
+        
+    }
+
+
+    </style>
+
+</head>
+<body>
+
+    <div class="painel">
+        <h1 class="neon">Feliz 12 DCM - Lo que es para siempre nunca se aleja ❤️..!!</h1>
+        <!--<img src="https://gifman.net/wp-content/uploads/2019/06/ursinhos-fofos-mordidas.gif">-->
+        <a href="https://www.youtube.com/watch?v=NAjJXrJu-Yk" target="_blank"><img src="https://i.pinimg.com/originals/7c/64/6f/7c646f136ddddd35debe5d0da95ed5c3.gif"></a>
+        <a href="ter.html" target="_blank"><button id="sim"> Presione aquí </button></a>
+    <button onmouseover= "fuja()" id="nao"> No </button>
+
+
+</div>
+<script>
+
+    function fuja(){
+        var botaoNao = document.getElementById("nao")
+        
+        var larguraJanela = window.innerWidth;
+        var alturaJanela = window.innerHeight;
+
+        var maxX = larguraJanela - botaoNao.offsetWidth;
+        var maxY = alturaJanela - botaoNao.offsetHeight;
+
+        var aleatorioX = Math.floor(Math.random() * maxX);
+        var aleatorioY = Math.floor(Math.random() * maxY);
+
+        botaoNao.style.left = aleatorioX + "px";
+        botaoNao.style.top = aleatorioY + "px";
+    }
+</script>
+
+</body>
+</html>
